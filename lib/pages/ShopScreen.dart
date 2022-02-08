@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:moneymanager/partsofpages/PartsOfShopScreen.dart';
 
 class ShopScreen extends StatelessWidget {
   const ShopScreen({Key? key}) : super(key: key);
@@ -23,7 +24,13 @@ class ShopScreen extends StatelessWidget {
       body: Container(
         width: double.infinity,
         height: double.infinity,
-        //child:
+        child: ListView (
+          children: <Widget>[
+            CardTextWidget(),
+            CardTextWidget(),
+            CardTextWidget(),
+          ],
+        ),
         decoration: BoxDecoration(
           image: DecorationImage(
             colorFilter: ColorFilter.mode(Colors.white.withOpacity(0.5), BlendMode.dstATop),

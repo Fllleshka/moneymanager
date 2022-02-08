@@ -5,6 +5,7 @@ import 'package:moneymanager/pages/ShopScreen.dart';
 import 'package:moneymanager/pages/RentalScreen.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
 }
 
